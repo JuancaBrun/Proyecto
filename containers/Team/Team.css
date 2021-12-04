@@ -1,0 +1,276 @@
+body {
+    margin: unset;
+}
+
+
+@font-face {
+    font-family: script;
+    src: url(../../fonts/BadScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: italiana;
+    src: url(../../fonts/Italiana-Regular.ttf);
+}
+
+p {
+    font-family: script;
+}
+
+a{
+    font-family: italiana;
+}
+
+/* HEADER */
+#Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1913;
+}
+
+#Logo img {
+    height: 60px;
+}
+
+.MainMenu {
+    justify-content: space-around;
+     width: 100%;
+     background-color: #1e1913;
+}
+
+/* MENÚ PRINCIPAL */
+.MainMenu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: unset;
+    align-items: center;
+    padding-inline-start: unset;
+    margin: unset;
+    padding: 10px 0;
+}
+
+.MainMenu li {
+    padding: 10px 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.MainMenu a {
+    color: white;
+    text-decoration: unset;
+    font-size: 25px;
+}
+
+/* BUSCADOR DE PIZZAS */
+.MainMenu form {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.SearchBox {
+    width: 133px;
+    height: 30px;
+}
+
+.SearchButton {
+    height: 30px;
+    background-color: #b73030;
+    border: unset;
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.SearchButton:hover {
+    transition-duration: 200ms;
+    transform: scale(1.05);
+}
+
+/* PARTE PRINCIPAL */
+.Main {
+    background-image: linear-gradient( #1e1913, rgb(49 49 49 / 31%), rgb(0 0 0 / 65%) ), url(../../media/pizza-cocinando.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: fit-content;
+    padding: 50px 0;
+}
+
+.Main h1{
+    color: #b73030;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.Description{
+    flex-direction: column;
+    align-items: center;
+    width: 87%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.Description p {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-size: 22px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.Description img{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+    border-style: outset;
+}
+
+/* FOOTER */
+footer {
+    padding: 30px 0;
+    background-color:#303030;
+    display: block;
+}
+
+footer .MenuFooter ul{
+    list-style: none;
+    text-align: center;
+    padding-inline-start: unset;
+    margin: unset;
+}
+
+footer .MenuFooter a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+footer p {
+    text-align: center;
+    color:  whitesmoke;
+}
+
+
+@media (min-width: 425px){
+    .Main {
+        padding: 50px 15%;
+    }
+
+    .MainMenu ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .MainMenu li {
+        padding: unset;
+    }
+
+    .MainMenu a{
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width:768px){
+    header{
+        display: flex;
+    }
+
+    .MainMenu {
+        width: 100%;
+         display: flex;
+         justify-content: space-around;
+     }
+
+     .MainMenu form {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .MainMenu ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+    }
+    
+    .MainMenu li {
+        padding: 0 10px;
+    }
+    
+    .MainMenu li:hover {
+        background-color: #b73030;
+    }
+    
+    .MainMenu a {
+        color: white;
+        text-decoration: unset;
+        font-size: 22px;
+    }
+
+    .SearchButton {
+        margin: 10px;
+    }
+
+    .Main {
+        padding: 50px 0;
+    }
+
+    .Description {
+        grid-template-columns: 50% 50%;
+    }
+
+    .Description p {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 90%;
+    }
+
+    .Description a {
+        color: red;
+    }
+    
+    .Description img{
+        grid-row: 1/2;
+        grid-column: 2/3;
+        width: 90%;
+    }
+
+    .ReverseInDesktop p {
+        grid-column: 2/3;
+    }
+
+     .ReverseInDesktop img {
+        grid-column: 1/2;
+    }
+
+    footer {
+        width: 100%;
+        height: max-content;
+    }
+
+    footer .MenuFooter ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .MenuFooter ul li {
+        padding: 0 10px;
+    }
+}
+
+@media(min-width: 950px){
+    .MainMenu form {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Ejercicio Grid</title>
+    <link rel="stylesheet" href="./Contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../media/favicon.ico">
+</head>
+
+<body class="contenedor">
+
+    <header>
+        <div id="Logo">
+            <a href="../Home/Home.html">
+                <img src="../../media/logo.png" alt="Logo-Pizza">
+            </a>
+        </div>
+        <nav class="MainMenu">
+            <ul>
+                <li><a href="../Products/Products.html">Pizzas</a></li>
+                <li><a href="../Schedule/Schedule.html">Horario</a></li>
+                <li><a href="../Team/Team.html">Conócenos</a></li>
+                <li><a href="../Contact/Contact.html">Contáctanos</a></li>
+            </ul>
+            <form>
+                <input class="SearchBox" type="search" name="q" placeholder="¿Tu pizza favorita?">
+                <input class="SearchButton" type="submit" value="¡Buscar Pizza!">
+            </form>
+        </nav>
+    </header>
+
+
+    <main class="Main">
+        <div class="Description">
+            <p>¿Te gustaría hacernos alguna sugerencia?</p>
+            <img src="../../media/contacto.jpg" alt="Contacto">
+        </div>
+        <aside>
+            <h1>Habla al equipo:</h1>
+            <fieldset>
+                <legend>Rellena este formulario</legend>
+                <div>
+                    <strong>Nombre</strong>
+                    <br>
+                    <input type="text" name="nombre" id="nombre">
+                    <br>
+                    <strong>Email</strong>
+                    <br>
+                    <input type="text" name="email" id="email">
+                    <br><br>
+                    <textarea name="descripcion" id="descripcion" placeholder="Escribenos aquí tu mensaje" cols="20"
+                        rows="5"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="urgente"><strong>Indicar como urgente</strong>
+                </div>
+                <button class="Submit" type="submit">ENVIAR</button>
+            </fieldset>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="MenuFooter">
+            <ul>
+                <li>
+                    <a href="#">Política de privacidad</a>
+                </li>
+                <li>
+                    <a href="#">Términos de uso</a>
+                </li>
+                <li>
+                    <a href="../Contact/Contact.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <p>©Copyright 2021 by Juan Carlos Brun.</p>
+    </footer>
+</body>
+
+</html>
